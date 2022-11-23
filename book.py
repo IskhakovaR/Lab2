@@ -10,7 +10,7 @@ fake.aadd_provider(person)
 
 text_orig = """
 insert into books_by_author(isbn, title, author, published_year, publisher, category)
-values ('$isbn', '$title', '$author', '$published_year', '$publisher', '$category');
+values ('$author', '$title', '$isbn', '$published_year', '$publisher', '$category');
 
 f=open('output.txt', 'w')
 for i in range(12):
