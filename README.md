@@ -3,7 +3,7 @@
 # Ход работы
 
 * Запускаем кластер cassandra в текущей конфигурации (один `seed` узел, один `worker` узел)
-![image](https://user-images.githubusercontent.com/93330045/203516343-a4442b3f-a733-477e-ba6a-a17478746051.png)
+![image](https://user-images.githubusercontent.com/93330045/203517513-28daa242-e680-4fee-864a-ab0af5df02aa.png)
 
 * С помощью запуска bash shell сессии в докер контейнере `seed` узла запускаем `nodetool status` и
   убеждаемся что кластер запущен и готов к работе (время инициализации кластера от одной до
