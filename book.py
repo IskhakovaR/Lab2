@@ -1,0 +1,21 @@
+from faker.providers import loren
+from faker.providers import person
+
+fake=Faker()
+fake.add_provider(isbn)
+fake.aadd_provider(loren)
+text_orig = """
+insert into books_by_author(isbn, title, author, published_year, publisher, category)
+values ('$isbn', '$title', '$author', '$published_year', '$publisher', '$category');
+
+f=open('output.txt', 'w')
+for i in range(12):
+  text_author = text_orig
+  text_author = text_author.replace('$author', fake.first_name()=fake.last_name())
+  for j in range(4):
+    text_book = text_author
+    text_book = text_book.replace('$isbn', fake.isbn13())
+    text_book = text_book.replace('$title', fake.word()+' '+fake.word())
+    text_book = text_book.replace('$published_year', fake.year())
+    text_book = text_book.replace('$publisher', fake.company())
+    text_book = text_book.replace('$category', fake.word())
