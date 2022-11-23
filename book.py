@@ -5,8 +5,8 @@ from faker.providers import person
 
 fake=Faker()
 fake.add_provider(isbn)
-fake.aadd_provider(lorem)
-fake.aadd_provider(person)
+fake.add_provider(lorem)
+fake.add_provider(person)
 
 text_orig = """
 insert into books_by_author(isbn, title, author, published_year, publisher, category)
