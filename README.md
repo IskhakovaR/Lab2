@@ -59,4 +59,6 @@ docker compose up --scale worker_node=2 -d
 * Снова проверяем для тех же авторов каким образом теперь расположены на узлах кластера
   соответствующие разбиения (partitions)ons)
   
-nodetool getendpoints test books_by_author 
+![image](https://user-images.githubusercontent.com/93330045/203563745-e88e23be-b77d-4096-88f0-c6218cc21982.png)
+
+![image](https://user-images.githubusercontent.com/93330045/203564268-503fa84a-f2b0-42c0-8bb8-53aac92ce4b0.png)
